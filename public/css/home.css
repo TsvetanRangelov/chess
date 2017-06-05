@@ -1,7 +1,7 @@
 #field{
   position: relative;
   border: 0px;
-  background-image: url("/images/chess16.bmp");
+  background-image: url("/images/chessboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 800px;
@@ -16,6 +16,60 @@ img:focus{
  width: 100px;
  height: 100px;
  display: inline-block;
- content: url("/images/whitepawn2.png");
  background-color: transparent;
+}
+
+
+
+#field img[piece="Pawn"][color="White"]{
+  top: 500px;
+  content: url("/images/whitepawn.png");
+}
+#field img[piece="Bishop"][color="White"]{
+  top: 700px;
+  content: url("/images/whitebishop.png");
+}
+#field img[piece="King"][color="White"]{
+  top: 700px;
+  content: url("/images/whiteking.png");
+}
+#field img[piece="Queen"][color="White"]{
+  top: 700px;
+  content: url("/images/whitequeen.png");
+}
+#field img[piece="Knight"][color="White"]{
+  top: 700px;
+  content: url("/images/whiteknight.png");
+}
+#field img[piece="Rook"][color="White"]{
+  top: 700px;
+  content: url("/images/whiterook.png");
+}
+
+
+
+
+#field img[piece="Pawn"][color="Black"]{
+  top: -200px;
+  content: url("/images/blackpawn.png");
+}
+#field img[piece="Bishop"][color="Black"]{
+  top: -200px;
+  content: url("/images/blackbishop.png");
+}
+#field img[piece="King"][color="Black"]{
+  top: -200px;
+  content: url("/images/blackking.png");
+}
+#field img[piece="Queen"][color="Black"]{
+  top: -200px;
+  content: url("/images/blackqueen.png");
+}
+#field img[piece="Knight"][color="Black"]{
+  top: -200px;
+  content: url("/images/blackknight.png");
+}
+#field img[piece="Rook"][color="Black"]{
+  top: -200px;
+  content: url("/images/blackrook.png");
 }
